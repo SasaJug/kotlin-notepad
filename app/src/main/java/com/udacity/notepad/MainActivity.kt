@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { startActivity(CreateActivity.get(this@MainActivity)) }
 
         recycler.layoutManager = LinearLayoutManager(this)
-        recycler.addItemDecoration(SpaceItemDecoration(this, R.dimen.margin_small))
+        recycler.addItemDecoration(SpaceItemDecoration(this, R.dimen.margin_small, 0))
         recycler.adapter = NotesAdapter(this)
     }
 
